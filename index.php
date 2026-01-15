@@ -4,6 +4,9 @@
     <title>PHP</title>
   </head>
   <body>
+    <div>
+      test
+    </div>
 <?php
     echo phpinfo();   
 ?>
