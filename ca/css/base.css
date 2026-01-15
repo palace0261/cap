@@ -1,7 +1,35 @@
 @charset "utf-8";
 
-/* 25-12.22 */
 /* base */
+
+#ca_man{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+#ca_man nav{
+    display: flex;
+    background: #fff;
+}
+#ca_man nav div > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lot{
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 2rem;
+}
+.lol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
 body, h1, h2, h3, h4, h5, h6, ul, p{
     margin: 0;
@@ -26,6 +54,9 @@ a
 {
     text-decoration: none;
     color: var(--black);
+}
+img{
+    width: 100%;
 }
 :root
 {

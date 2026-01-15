@@ -1,5 +1,10 @@
 @charset "utf-8";
 
-body{
-  background-color: #ccc;
+#ca_man section{
+background: #5c5c5c;
+  padding: 0.5rem;
+}
+#ca_man section > div{
+  padding: 0.5rem;
+  background: #a1a1a1;
 }
