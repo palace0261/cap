@@ -5,14 +5,19 @@
     allElements.forEach(function(el) {
       var includePath = el.dataset.includePath;
       if (includePath) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            el.outerHTML = this.responseText;
-          }
-        };
-        xhttp.open('GET', includePath, true);
-        xhttp.send();
+        fetch(includePath)
+          .then(response => {
+            if (response.ok) {
+              return response.text();
+            }
+            throw new Error('Network response was not ok');
+          })
+          .then(text => {
+            el.outerHTML = text;
+          })
+          .catch(error => {
+            console.error('Error loading HTML:', error);
+          });
       }
     });
   }
