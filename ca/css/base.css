@@ -4,8 +4,18 @@
 
 #ca_man{
     max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+#ca_man nav > div,
+#ca_man section > div,
+#ca_man footer > div{
     width: 90%;
     margin: 0 auto;
+}
+#ca_man footer{
+    background:#111;
+    color:#fbfbfb
 }
 #ca_man nav{
     display: flex;
